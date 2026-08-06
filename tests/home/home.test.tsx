@@ -21,4 +21,10 @@ describe("PARTY HUB homepage", () => {
     render(<HomePage locale="en" />);
     expect(screen.getByAltText("Colorful agate star foil balloons")).toHaveAttribute("src", expect.stringContaining("partyhub-star-hero.png"));
   });
+
+  it("uses a bright celebratory hero instead of a dark surface", () => {
+    render(<HomePage locale="en" />);
+    expect(screen.getByTestId("hero")).toHaveClass("hero-light");
+    expect(screen.getByTestId("hero")).not.toHaveClass("dark");
+  });
 });
