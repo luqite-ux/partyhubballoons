@@ -1,0 +1,7 @@
+import { products as fallbackProducts, type ProductFallback } from "@/content/products";
+import { resolveLocalized } from "@/lib/i18n/resolve";
+import { getSupabaseClient, getTenantId } from "./client";
+type ProductRow={slug:string;name_i18n?:Record<string,string>;description_i18n?:Record<string,string>;image_url?:string|null;extra_data?:{category?:string;images?:string[]}|null;updated_at?:string};
+export function mapProductRow(row:ProductRow,locale:string,defaultLocale="en"):ProductFallback&{updatedAt?:string}{return {slug:row.slug,name:resolveLocalized(row.name_i18n,locale,defaultLocale)??row.slug,description:resolveLocalized(row.description_i18n,locale,defaultLocale)??"",image:row.image_url??"/media/products/agate-star-foil-balloon.png",category:row.extra_data?.category??"Foil Balloons",applications:[],customization:[],updatedAt:row.updated_at}}
+export async function getProducts(locale:string){const db=getSupabaseClient(),tenant=getTenantId();if(!db||!tenant)return fallbackProducts;const {data,error}=await db.from("products").select("slug,name_i18n,description_i18n,image_url,extra_data,updated_at").eq("tenant_id",tenant).eq("is_active",true).order("sort_order");if(error||!data?.length)return fallbackProducts;return data.map(row=>mapProductRow(row,locale))}
+export async function getProductBySlug(slug:string,locale:string){const list=await getProducts(locale);return list.find(x=>x.slug===slug)??null}

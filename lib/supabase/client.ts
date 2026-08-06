@@ -1,0 +1,4 @@
+import { createClient, type SupabaseClient } from "@supabase/supabase-js";
+let browserClient:SupabaseClient|null|undefined;
+export function getSupabaseClient(){if(browserClient!==undefined)return browserClient;const url=process.env.NEXT_PUBLIC_SUPABASE_URL;const key=process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;browserClient=url&&key?createClient(url,key):null;return browserClient}
+export function getTenantId(){return process.env.NEXT_PUBLIC_TENANT_ID??null}
