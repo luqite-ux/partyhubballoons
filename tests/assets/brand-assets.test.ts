@@ -25,4 +25,13 @@ describe("brand image assets", () => {
     const path = join(root, "public", "media", "products", filename);
     expect(pngColorType(path)).toBe(6);
   });
+
+  it.each([
+    "components/home/home-page.tsx",
+    "components/products/products-grid.tsx",
+    "components/products/product-detail.tsx",
+  ])("serves R2 product art directly in %s", (filename) => {
+    const source = readFileSync(join(root, filename), "utf8");
+    expect(source).toContain("unoptimized");
+  });
 });

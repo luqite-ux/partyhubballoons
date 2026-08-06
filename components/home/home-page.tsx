@@ -81,12 +81,13 @@ export function HomePage({ locale }: { locale: string }) {
                 key={p.slug}
               >
                 <div className="product-image">
-                  <Image
-                    src={p.image}
-                    alt={p.name}
-                    fill
-                    sizes="(max-width:760px) 90vw,31vw"
-                  />
+                   <Image
+                     src={p.image}
+                     alt={p.name}
+                     fill
+                     unoptimized
+                     sizes="(max-width:760px) 90vw,31vw"
+                   />
                 </div>
                 <span>{p.category}</span>
                 <h3>{p.name}</h3>
