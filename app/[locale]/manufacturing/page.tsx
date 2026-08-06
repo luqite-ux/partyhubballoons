@@ -1,0 +1,1 @@
+import { InfoPage } from "@/components/layout/info-page";import { publicPages } from "@/content/pages";export default async function Page({params}:{params:Promise<{locale:string}>}){const {locale}=await params;return <InfoPage locale={locale} page={publicPages.manufacturing}/>}

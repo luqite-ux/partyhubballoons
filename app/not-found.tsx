@@ -1,0 +1,1 @@
+import Link from "next/link";export default function NotFound(){return <main className="not-found dark"><div><span className="eyebrow">404</span><h1>This celebration moved elsewhere.</h1><p>The page could not be found. Return to the PARTY HUB collection and keep exploring.</p><Link className="button" href="/en">Back to Home</Link></div></main>}

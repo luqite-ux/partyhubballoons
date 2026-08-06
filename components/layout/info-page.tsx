@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import type { PublicPage } from "@/content/pages";
+export function InfoPage({locale,page}:{locale:string;page:PublicPage}){return <main><section className="page-hero dark"><div className="container"><span className="eyebrow">{page.eyebrow}</span><h1>{page.title}</h1><p>{page.description}</p></div></section>{page.sections.length>0&&<section className="section light"><div className="container info-grid">{page.sections.map((x,i)=><article key={x.title}><span>0{i+1}</span><h2>{x.title}</h2><p>{x.body}</p></article>)}</div></section>}<section className="mini-cta gradient"><div className="container"><div><span className="eyebrow">Start a conversation</span><h2>Planning a balloon collection?</h2></div><Link className="button" href={`/${locale}/contact`}>Request a Quote <ArrowRight size={17}/></Link></div></section></main>}
