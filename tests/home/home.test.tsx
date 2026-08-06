@@ -16,4 +16,9 @@ describe("PARTY HUB homepage", () => {
     expect(screen.getByText("40,000 m²")).toBeInTheDocument();
     expect(screen.getByText("5 million")).toBeInTheDocument();
   });
+
+  it("uses the reviewed dark-background hero artwork", () => {
+    render(<HomePage locale="en" />);
+    expect(screen.getByAltText("Colorful agate star foil balloons")).toHaveAttribute("src", expect.stringContaining("partyhub-star-hero.png"));
+  });
 });
