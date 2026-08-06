@@ -10,9 +10,10 @@ describe("Supabase multilingual row mapping", () => {
   });
 
   it("maps published article JSONB with the same fallback", () => {
-    const article = mapArticleRow({ slug:"design", title_i18n:{en:"Design"}, excerpt_i18n:{de:"Ideen"}, content_i18n:{en:"<p>Body</p>"}, published_at:"2026-08-06" },"fr","en");
+    const article = mapArticleRow({ slug:"design", title_i18n:{en:"Design"}, excerpt_i18n:{de:"Ideen"}, content_i18n:{en:"<p>Body</p>"}, featured_image:"https://example.com/article.png", published_at:"2026-08-06" },"fr","en");
     expect(article.title).toBe("Design");
     expect(article.excerpt).toBe("Ideen");
     expect(article.content).toBe("<p>Body</p>");
+    expect(article.image).toBe("https://example.com/article.png");
   });
 });
