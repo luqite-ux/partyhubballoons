@@ -1,0 +1,15 @@
+[
+  { "id": "brand-logo", "sourcePath": "图片/LOGO.png", "outputPath": "/brand/logo.png", "kind": "brand", "public": true, "reviewStatus": "approved" },
+  { "id": "product-agate-star", "sourcePath": "图片/产品 (1).png", "outputPath": "/media/products/agate-star-foil-balloon.png", "kind": "product", "productSlug": "agate-star-foil-balloon", "public": true, "reviewStatus": "approved" },
+  { "id": "product-anniversary-letters", "sourcePath": "图片/产品 (2).png", "outputPath": "/media/products/happy-anniversary-letter-balloons.png", "kind": "product", "productSlug": "happy-anniversary-letter-balloons", "public": true, "reviewStatus": "approved" },
+  { "id": "product-birthday-girl", "sourcePath": "图片/产品 (3).png", "outputPath": "/media/products/birthday-girl-foil-balloon.png", "kind": "product", "productSlug": "birthday-girl-foil-balloon", "public": true, "reviewStatus": "approved" },
+  { "id": "product-feliz-dia", "sourcePath": "图片/产品 (4).png", "outputPath": "/media/products/feliz-dia-round-foil-balloon.png", "kind": "product", "productSlug": "feliz-dia-round-foil-balloon", "public": true, "reviewStatus": "approved" },
+  { "id": "product-number-set", "sourcePath": "图片/产品 (5).png", "outputPath": "/media/products/gold-number-foil-balloons.png", "kind": "product", "productSlug": "gold-number-foil-balloons", "public": true, "reviewStatus": "approved" },
+  { "id": "factory-production-line", "sourcePath": "图片/公司环境2.png", "outputPath": "/media/factory/production-line.png", "kind": "factory", "public": true, "reviewStatus": "approved" },
+  { "id": "factory-workshop", "sourcePath": "图片/公司环境6.png", "outputPath": "/media/factory/workshop.png", "kind": "factory", "public": true, "reviewStatus": "approved" },
+  { "id": "factory-materials", "sourcePath": "图片/公司环境7.png", "outputPath": "/media/factory/materials.png", "kind": "factory", "public": true, "reviewStatus": "approved" },
+  { "id": "factory-printing", "sourcePath": "图片/厂房4.png", "outputPath": "/media/factory/printing-equipment.png", "kind": "factory", "public": true, "reviewStatus": "approved" },
+  { "id": "factory-finishing", "sourcePath": "图片/厂房5.png", "outputPath": "/media/factory/finishing-line.png", "kind": "factory", "public": true, "reviewStatus": "approved" },
+  { "id": "business-license", "sourcePath": "营业执照.png", "outputPath": null, "kind": "license", "public": false, "reviewStatus": "private" },
+  { "id": "compliance-pdf", "sourcePath": "企业合规资质5.pdf", "outputPath": null, "kind": "certificate", "public": false, "reviewStatus": "pending-verification" }
+]
