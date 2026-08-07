@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import {
   ArrowRight,
   BadgeCheck,
@@ -10,6 +11,8 @@ import {
 import { company } from "@/content/company";
 import { faq } from "@/content/faq";
 import { products } from "@/content/products";
+import { AnimatedMetric } from "@/components/motion/animated-metric";
+import { Reveal } from "@/components/motion/reveal";
 
 export function HomePage({ locale }: { locale: string }) {
   return (
@@ -51,17 +54,17 @@ export function HomePage({ locale }: { locale: string }) {
           </div>
         </div>
       </section>
-      <section className="metrics metrics-light">
+      <Reveal as="section" className="metrics metrics-light">
         <div className="container metrics-grid">
-          {company.metrics.map((m) => (
-            <div key={m.label}>
-              <strong>{m.value}</strong>
+          {company.metrics.map((m, index) => (
+            <div className="reveal-item" style={{ "--reveal-order": index } as CSSProperties} key={m.label}>
+              <AnimatedMetric value={m.value} />
               <span>{m.label}</span>
             </div>
           ))}
         </div>
-      </section>
-      <section className="section light">
+      </Reveal>
+      <Reveal as="section" className="section light">
         <div className="container">
           <div className="section-heading">
             <div>
@@ -73,10 +76,11 @@ export function HomePage({ locale }: { locale: string }) {
             </Link>
           </div>
           <div className="product-grid">
-            {products.map((p) => (
+            {products.map((p, index) => (
               <Link
                 data-testid="product-card"
-                className="product-card"
+                className="product-card reveal-item"
+                style={{ "--reveal-order": index } as CSSProperties}
                 href={`/${locale}/products/${p.slug}`}
                 key={p.slug}
               >
@@ -99,8 +103,8 @@ export function HomePage({ locale }: { locale: string }) {
             ))}
           </div>
         </div>
-      </section>
-      <section className="section gradient">
+      </Reveal>
+      <Reveal as="section" className="section gradient">
         <div className="container split">
           <div className="factory">
             <Image
@@ -137,8 +141,8 @@ export function HomePage({ locale }: { locale: string }) {
             </Link>
           </div>
         </div>
-      </section>
-      <section className="section dark">
+      </Reveal>
+      <Reveal as="section" className="section dark">
         <div className="container">
           <span className="eyebrow">OEM / ODM workflow</span>
           <h2>A clear route from idea to shipment.</h2>
@@ -148,8 +152,8 @@ export function HomePage({ locale }: { locale: string }) {
               ["02", "Sample"],
               ["03", "Production"],
               ["04", "Inspection"],
-            ].map(([n, t]) => (
-              <article key={n}>
+            ].map(([n, t], index) => (
+              <article className="reveal-item" style={{ "--reveal-order": index } as CSSProperties} key={n}>
                 <span>{n}</span>
                 <h3>{t}</h3>
                 <p>
@@ -160,8 +164,8 @@ export function HomePage({ locale }: { locale: string }) {
             ))}
           </div>
         </div>
-      </section>
-      <section className="section light">
+      </Reveal>
+      <Reveal as="section" className="section light">
         <div className="container custom">
           <div>
             <span className="eyebrow">
@@ -186,13 +190,13 @@ export function HomePage({ locale }: { locale: string }) {
               "Language variants",
               "Retail packs",
               "Assorted sets",
-            ].map((x) => (
-              <span key={x}>{x}</span>
+            ].map((x, index) => (
+              <span className="reveal-item" style={{ "--reveal-order": index } as CSSProperties} key={x}>{x}</span>
             ))}
           </div>
         </div>
-      </section>
-      <section className="section faq">
+      </Reveal>
+      <Reveal as="section" className="section faq">
         <div className="container">
           <div className="section-heading">
             <div>
@@ -201,16 +205,16 @@ export function HomePage({ locale }: { locale: string }) {
             </div>
           </div>
           <div className="faq-grid">
-            {faq.slice(0, 4).map((x) => (
-              <article key={x.question}>
+            {faq.slice(0, 4).map((x, index) => (
+              <article className="reveal-item" style={{ "--reveal-order": index } as CSSProperties} key={x.question}>
                 <h3>{x.question}</h3>
                 <p>{x.answer}</p>
               </article>
             ))}
           </div>
         </div>
-      </section>
-      <section className="quote dark">
+      </Reveal>
+      <Reveal as="section" className="quote dark">
         <div className="container">
           <span className="eyebrow">Bring your next collection to life</span>
           <h2>Ready to create something worth celebrating?</h2>
@@ -222,7 +226,7 @@ export function HomePage({ locale }: { locale: string }) {
             Request a Quote <ArrowRight size={17} />
           </Link>
         </div>
-      </section>
+      </Reveal>
     </main>
   );
 }
