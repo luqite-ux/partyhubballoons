@@ -1,2 +1,4 @@
 import { faq } from "@/content/faq";
+import {buildStaticPageMetadata} from "@/lib/seo/metadata";
+export const metadata=buildStaticPageMetadata("faq");
 export default function Page(){return <main><section className="page-hero dark"><div className="container"><span className="eyebrow">FAQ</span><h1>Useful answers for your sourcing process.</h1><p>Customization, sampling, quantities, lead times, inspection, and shipping preparation.</p></div></section><section className="section light"><div className="container faq-list">{faq.map(x=><article key={x.question}><h2>{x.question}</h2><p>{x.answer}</p></article>)}</div></section></main>}
