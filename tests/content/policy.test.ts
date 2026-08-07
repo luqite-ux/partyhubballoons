@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { company } from "../../content/company";
 import { faq } from "../../content/faq";
 import { products } from "../../content/products";
+import { publicPages } from "../../content/pages";
 
 const prohibited = /\b(?:warrant(?:y|ies)|guarantee(?:d)?)\b|质保|保修|质量保证/iu;
 
@@ -18,6 +19,11 @@ describe("reviewed public content", () => {
       expect.objectContaining({ value: "80" }),
       expect.objectContaining({ value: "5 million" }),
     ]));
+  });
+
+  it("attributes factory capacity to the manufacturing partner network", () => {
+    expect(company.metrics.every((metric) => metric.label.startsWith("Partner "))).toBe(true);
+    expect(publicPages.manufacturing.description).toMatch(/manufacturing partner network/i);
   });
 
   it("maps all five supplied product groups", () => {

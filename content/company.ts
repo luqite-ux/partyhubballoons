@@ -7,10 +7,10 @@ export const company = {
   introduction:
     "PARTY HUB connects international buyers with large-scale balloon production, flexible custom decoration options, and practical order support for celebrations, events, retail programs, and seasonal campaigns.",
   metrics: [
-    { value: "40,000 m²", label: "Production footprint" },
-    { value: "10", label: "Workshops" },
-    { value: "80", label: "Production lines" },
-    { value: "5 million", label: "Balloons produced per day" },
+    { value: "40,000 m²", label: "Partner production footprint" },
+    { value: "10", label: "Partner workshops" },
+    { value: "80", label: "Partner production lines" },
+    { value: "5 million", label: "Partner daily balloon capacity" },
   ],
   equipment: [
     "10 printing machines",
