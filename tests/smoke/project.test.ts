@@ -7,7 +7,7 @@ describe("project baseline", () => {
   });
 
   it("provides test and typecheck gates", () => {
-    expect(packageJson.scripts.test).toBe("vitest run");
+    expect(packageJson.scripts.test).toBe("vitest run --exclude tests/*.test.mjs && node --test tests/*.test.mjs");
     expect(packageJson.scripts.typecheck).toBe("tsc --noEmit");
   });
 });
