@@ -22,10 +22,12 @@ export async function POST(request: Request) {
   if (!captchaSecret) return NextResponse.json({ error: "Verification service is unavailable." }, { status: 503 })
   let captchaResult
   try {
-    const context = createSupabaseCaptchaContextFromEnv()
+    const { tenantId, siteScope, store } = createSupabaseCaptchaContextFromEnv()
     captchaResult = await verifyCaptchaSubmission({
       secret: captchaSecret,
-      ...context,
+      tenantId,
+      siteScope,
+      store,
       scope: String(body.captchaScope || ""),
       token: String(body.captchaToken || ""),
       answer: String(body.captchaAnswer || ""),
