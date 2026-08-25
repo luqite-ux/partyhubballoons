@@ -1,0 +1,1592 @@
+[
+  {
+    "source": "人造鱼饵.png",
+    "output": "artificial-fishing-lure.png",
+    "sourceSize": [
+      1232,
+      789
+    ],
+    "detectedBounds": [
+      68,
+      237,
+      1215,
+      788
+    ],
+    "placedBounds": [
+      48,
+      225,
+      1152,
+      755
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "体育用球.png",
+    "output": "sports-ball.png",
+    "sourceSize": [
+      1251,
+      1200
+    ],
+    "detectedBounds": [
+      29,
+      20,
+      1190,
+      1200
+    ],
+    "placedBounds": [
+      244,
+      128,
+      956,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "体育用网.png",
+    "output": "sports-net.png",
+    "sourceSize": [
+      1208,
+      641
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      1208,
+      539
+    ],
+    "placedBounds": [
+      48,
+      243,
+      1152,
+      736
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "体能锻炼设备.png",
+    "output": "fitness-training-equipment.png",
+    "sourceSize": [
+      1231,
+      1200
+    ],
+    "detectedBounds": [
+      68,
+      99,
+      1171,
+      1151
+    ],
+    "placedBounds": [
+      220,
+      128,
+      979,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "健身器械.png",
+    "output": "fitness-machine.png",
+    "sourceSize": [
+      1104,
+      1344
+    ],
+    "detectedBounds": [
+      136,
+      97,
+      1067,
+      1308
+    ],
+    "placedBounds": [
+      321,
+      128,
+      878,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "击剑武器.png",
+    "output": "fencing-weapon.png",
+    "sourceSize": [
+      1146,
+      1108
+    ],
+    "detectedBounds": [
+      243,
+      45,
+      1036,
+      1056
+    ],
+    "placedBounds": [
+      316,
+      128,
+      884,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "划船机器械.png",
+    "output": "rowing-machine.png",
+    "sourceSize": [
+      1208,
+      979
+    ],
+    "detectedBounds": [
+      30,
+      49,
+      1158,
+      947
+    ],
+    "placedBounds": [
+      145,
+      128,
+      1054,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "哑铃.png",
+    "output": "dumbbells.png",
+    "sourceSize": [
+      1290,
+      1247
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      1290,
+      1099
+    ],
+    "placedBounds": [
+      175,
+      128,
+      1025,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "固定式健身自行车用滚轮.png",
+    "output": "stationary-bike-roller.png",
+    "sourceSize": [
+      820,
+      738
+    ],
+    "detectedBounds": [
+      42,
+      0,
+      820,
+      738
+    ],
+    "placedBounds": [
+      218,
+      128,
+      981,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "婴儿玩具.png",
+    "output": "infant-toys.png",
+    "sourceSize": [
+      1232,
+      1244
+    ],
+    "detectedBounds": [
+      0,
+      41,
+      1232,
+      1244
+    ],
+    "placedBounds": [
+      229,
+      128,
+      970,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "守门员手套.png",
+    "output": "goalkeeper-gloves.png",
+    "sourceSize": [
+      1189,
+      1162
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      1189,
+      1162
+    ],
+    "placedBounds": [
+      229,
+      128,
+      970,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "宠物玩具.png",
+    "output": "pet-toys.png",
+    "sourceSize": [
+      1200,
+      1165
+    ],
+    "detectedBounds": [
+      12,
+      0,
+      1200,
+      1165
+    ],
+    "placedBounds": [
+      231,
+      128,
+      969,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "弹力带.png",
+    "output": "resistance-band.png",
+    "sourceSize": [
+      1165,
+      855
+    ],
+    "detectedBounds": [
+      18,
+      83,
+      1119,
+      851
+    ],
+    "placedBounds": [
+      81,
+      128,
+      1119,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "握力训练器.png",
+    "output": "hand-grip-trainer.png",
+    "sourceSize": [
+      1213,
+      1231
+    ],
+    "detectedBounds": [
+      156,
+      51,
+      978,
+      1231
+    ],
+    "placedBounds": [
+      348,
+      128,
+      852,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "智能机器人玩具.png",
+    "output": "smart-robot-toy.png",
+    "sourceSize": [
+      1123,
+      1224
+    ],
+    "detectedBounds": [
+      106,
+      18,
+      1064,
+      1186
+    ],
+    "placedBounds": [
+      303,
+      128,
+      897,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "智能毛绒玩具.png",
+    "output": "smart-plush-toys.png",
+    "sourceSize": [
+      1220,
+      1255
+    ],
+    "detectedBounds": [
+      29,
+      0,
+      1218,
+      1255
+    ],
+    "placedBounds": [
+      257,
+      128,
+      943,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "杠铃.jpg",
+    "output": "barbell.png",
+    "sourceSize": [
+      1290,
+      782
+    ],
+    "detectedBounds": [
+      113,
+      203,
+      1172,
+      492
+    ],
+    "placedBounds": [
+      48,
+      339,
+      1152,
+      640
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "毛绒玩具.jpg",
+    "output": "plush-toy.png",
+    "sourceSize": [
+      1290,
+      1248
+    ],
+    "detectedBounds": [
+      55,
+      0,
+      1217,
+      1247
+    ],
+    "placedBounds": [
+      262,
+      128,
+      937,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "水撬.jpg",
+    "output": "water-skis.png",
+    "sourceSize": [
+      1290,
+      658
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      1290,
+      658
+    ],
+    "placedBounds": [
+      48,
+      208,
+      1152,
+      771
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "沙袋.png",
+    "output": "punching-bag.png",
+    "sourceSize": [
+      1014,
+      1259
+    ],
+    "detectedBounds": [
+      323,
+      0,
+      636,
+      1226
+    ],
+    "placedBounds": [
+      507,
+      128,
+      692,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "游戏中的玩家操作控制.png",
+    "output": "game-controller.png",
+    "sourceSize": [
+      983,
+      700
+    ],
+    "detectedBounds": [
+      59,
+      54,
+      936,
+      589
+    ],
+    "placedBounds": [
+      48,
+      153,
+      1152,
+      826
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "游戏用球.png",
+    "output": "game-ball.png",
+    "sourceSize": [
+      1041,
+      809
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      1041,
+      809
+    ],
+    "placedBounds": [
+      134,
+      128,
+      1066,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "游泳圈.png",
+    "output": "swim-rings.png",
+    "sourceSize": [
+      1220,
+      1084
+    ],
+    "detectedBounds": [
+      20,
+      0,
+      1220,
+      1074
+    ],
+    "placedBounds": [
+      195,
+      128,
+      1004,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "游泳脚蹼.png",
+    "output": "swim-fins.png",
+    "sourceSize": [
+      968,
+      1042
+    ],
+    "detectedBounds": [
+      0,
+      57,
+      968,
+      1042
+    ],
+    "placedBounds": [
+      244,
+      128,
+      956,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "游泳蹼.png",
+    "output": "swimming-flippers.png",
+    "sourceSize": [
+      1282,
+      1279
+    ],
+    "detectedBounds": [
+      0,
+      3,
+      1282,
+      1268
+    ],
+    "placedBounds": [
+      233,
+      128,
+      967,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "滑板.png",
+    "output": "skateboard.png",
+    "sourceSize": [
+      940,
+      1286
+    ],
+    "detectedBounds": [
+      96,
+      4,
+      772,
+      1269
+    ],
+    "placedBounds": [
+      406,
+      128,
+      793,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "滑翔伞.png",
+    "output": "paraglider.png",
+    "sourceSize": [
+      1290,
+      1115
+    ],
+    "detectedBounds": [
+      30,
+      22,
+      1266,
+      1113
+    ],
+    "placedBounds": [
+      190,
+      128,
+      1010,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "滑轮鞋.png",
+    "output": "roller-skates.png",
+    "sourceSize": [
+      1108,
+      1181
+    ],
+    "detectedBounds": [
+      195,
+      22,
+      1052,
+      1100
+    ],
+    "placedBounds": [
+      312,
+      128,
+      888,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "滑雪包装袋.png",
+    "output": "ski-bag.png",
+    "sourceSize": [
+      1142,
+      1235
+    ],
+    "detectedBounds": [
+      204,
+      12,
+      812,
+      1230
+    ],
+    "placedBounds": [
+      419,
+      128,
+      780,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "玩具无人机.png",
+    "output": "toy-drone.png",
+    "sourceSize": [
+      1243,
+      870
+    ],
+    "detectedBounds": [
+      46,
+      215,
+      1224,
+      757
+    ],
+    "placedBounds": [
+      48,
+      236,
+      1152,
+      744
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "玩具机器人.png",
+    "output": "toy-robot.png",
+    "sourceSize": [
+      1111,
+      1888
+    ],
+    "detectedBounds": [
+      0,
+      26,
+      1111,
+      1888
+    ],
+    "placedBounds": [
+      384,
+      128,
+      816,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "玩具气球.png",
+    "output": "toy-balloon.png",
+    "sourceSize": [
+      1068,
+      1193
+    ],
+    "detectedBounds": [
+      98,
+      96,
+      974,
+      1148
+    ],
+    "placedBounds": [
+      298,
+      128,
+      901,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "玩具汽车.png",
+    "output": "toy-cars.png",
+    "sourceSize": [
+      991,
+      893
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      991,
+      893
+    ],
+    "placedBounds": [
+      198,
+      128,
+      1001,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "玩具滑板车.png",
+    "output": "toy-scooters.png",
+    "sourceSize": [
+      1228,
+      882
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      1228,
+      878
+    ],
+    "placedBounds": [
+      93,
+      128,
+      1106,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "玩具积木.png",
+    "output": "building-blocks.png",
+    "sourceSize": [
+      1247,
+      1267
+    ],
+    "detectedBounds": [
+      46,
+      37,
+      1246,
+      1267
+    ],
+    "placedBounds": [
+      247,
+      128,
+      953,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "玩具车辆.png",
+    "output": "toy-vehicle.png",
+    "sourceSize": [
+      1209,
+      766
+    ],
+    "detectedBounds": [
+      20,
+      70,
+      1209,
+      766
+    ],
+    "placedBounds": [
+      48,
+      167,
+      1152,
+      813
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "球拍.png",
+    "output": "racket.png",
+    "sourceSize": [
+      944,
+      1294
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      944,
+      1294
+    ],
+    "placedBounds": [
+      336,
+      128,
+      864,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "瑜伽秋千.png",
+    "output": "yoga-swing.png",
+    "sourceSize": [
+      812,
+      1018
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      812,
+      1018
+    ],
+    "placedBounds": [
+      311,
+      128,
+      888,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "电子游戏装置.png",
+    "output": "video-game-console.png",
+    "sourceSize": [
+      975,
+      859
+    ],
+    "detectedBounds": [
+      7,
+      41,
+      952,
+      754
+    ],
+    "placedBounds": [
+      120,
+      128,
+      1080,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "登山者安全带.png",
+    "output": "climbing-harness.png",
+    "sourceSize": [
+      1170,
+      1749
+    ],
+    "detectedBounds": [
+      0,
+      73,
+      1170,
+      1749
+    ],
+    "placedBounds": [
+      347,
+      128,
+      852,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "羽毛球.png",
+    "output": "shuttlecock.png",
+    "sourceSize": [
+      1205,
+      1259
+    ],
+    "detectedBounds": [
+      207,
+      0,
+      1080,
+      1250
+    ],
+    "placedBounds": [
+      347,
+      128,
+      853,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "胸部锻炼器、拉伸器.png",
+    "output": "chest-exerciser.png",
+    "sourceSize": [
+      1220,
+      715
+    ],
+    "detectedBounds": [
+      74,
+      265,
+      1164,
+      537
+    ],
+    "placedBounds": [
+      48,
+      352,
+      1152,
+      627
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "腰部塑形健身带.png",
+    "output": "waist-trainer.png",
+    "sourceSize": [
+      1255,
+      1235
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      1255,
+      1235
+    ],
+    "placedBounds": [
+      232,
+      128,
+      968,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "训练杆.png",
+    "output": "training-bar.png",
+    "sourceSize": [
+      1065,
+      971
+    ],
+    "detectedBounds": [
+      89,
+      329,
+      992,
+      616
+    ],
+    "placedBounds": [
+      48,
+      314,
+      1152,
+      665
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "跳板.png",
+    "output": "springboard.png",
+    "sourceSize": [
+      1232,
+      618
+    ],
+    "detectedBounds": [
+      92,
+      132,
+      1156,
+      577
+    ],
+    "placedBounds": [
+      48,
+      259,
+      1152,
+      721
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "运动用护腕.png",
+    "output": "wrist-support.png",
+    "sourceSize": [
+      995,
+      1227
+    ],
+    "detectedBounds": [
+      0,
+      56,
+      995,
+      1188
+    ],
+    "placedBounds": [
+      282,
+      128,
+      918,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "运动用护腰.png",
+    "output": "waist-support.png",
+    "sourceSize": [
+      1247,
+      645
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      1247,
+      645
+    ],
+    "placedBounds": [
+      48,
+      204,
+      1152,
+      775
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "运动用护膝.png",
+    "output": "knee-support.png",
+    "sourceSize": [
+      1197,
+      1263
+    ],
+    "detectedBounds": [
+      240,
+      28,
+      1006,
+      1230
+    ],
+    "placedBounds": [
+      369,
+      128,
+      830,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "钓鱼用具.png",
+    "output": "fishing-tackle.png",
+    "sourceSize": [
+      1197,
+      754
+    ],
+    "detectedBounds": [
+      103,
+      0,
+      1191,
+      723
+    ],
+    "placedBounds": [
+      55,
+      128,
+      1145,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "钓鱼竿.png",
+    "output": "fishing-rod.png",
+    "sourceSize": [
+      1271,
+      738
+    ],
+    "detectedBounds": [
+      54,
+      127,
+      1153,
+      709
+    ],
+    "placedBounds": [
+      48,
+      197,
+      1152,
+      782
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "飞盘.png",
+    "output": "flying-discs.png",
+    "sourceSize": [
+      1243,
+      1228
+    ],
+    "detectedBounds": [
+      63,
+      64,
+      1147,
+      1219
+    ],
+    "placedBounds": [
+      260,
+      128,
+      939,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "骰子.jpg",
+    "output": "dice.png",
+    "sourceSize": [
+      1290,
+      1261
+    ],
+    "detectedBounds": [
+      146,
+      281,
+      1001,
+      1083
+    ],
+    "placedBounds": [
+      214,
+      128,
+      986,
+      852
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  },
+  {
+    "source": "高尔夫球杆.png",
+    "output": "golf-club.png",
+    "sourceSize": [
+      1263,
+      836
+    ],
+    "detectedBounds": [
+      0,
+      0,
+      1263,
+      771
+    ],
+    "placedBounds": [
+      48,
+      153,
+      1152,
+      827
+    ],
+    "brandBox": [
+      48,
+      34,
+      226,
+      107
+    ],
+    "canvas": [
+      1200,
+      900
+    ]
+  }
+]

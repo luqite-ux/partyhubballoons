@@ -1,0 +1,130 @@
+.rqw-sports-page {
+  min-height: 100vh;
+  background: #fff8fc;
+  color: #111827;
+}
+
+.rqw-sports-shell {
+  width: min(1280px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.rqw-sports-hero {
+  padding: 76px 0 62px;
+  border-bottom: 1px solid #f3d9e8;
+  background:
+    radial-gradient(circle at 18% 10%, rgba(233, 30, 140, 0.1), transparent 32%),
+    linear-gradient(135deg, #fdf2f8 0%, #ffffff 56%, #fef7ff 100%);
+  text-align: center;
+}
+
+.rqw-sports-kicker {
+  margin: 0;
+  color: #d9197b;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.rqw-sports-hero h1 {
+  margin: 16px 0 0;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(2.65rem, 5vw, 4.7rem);
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.rqw-sports-intro {
+  max-width: 720px;
+  margin: 20px auto 0;
+  color: #657087;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.rqw-sports-catalog {
+  padding: 54px 0 88px;
+}
+
+.rqw-sports-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.rqw-sports-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #f1dbe8;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 14px 38px rgba(80, 33, 62, 0.07);
+}
+
+.rqw-sports-image-stage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-bottom: 1px solid #f5e8ef;
+  background: #fff;
+}
+
+.rqw-sports-image-stage img {
+  object-fit: contain;
+}
+
+.rqw-sports-card-copy {
+  min-height: 116px;
+  padding: 22px 24px 26px;
+}
+
+.rqw-sports-card-copy p {
+  margin: 0 0 8px;
+  color: #d9197b;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.13em;
+}
+
+.rqw-sports-card-copy h2 {
+  margin: 0;
+  font-family: var(--font-sans), Arial, sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.35;
+  letter-spacing: -0.018em;
+}
+
+@media (max-width: 980px) {
+  .rqw-sports-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .rqw-sports-shell {
+    width: calc(100% - 28px);
+  }
+
+  .rqw-sports-hero {
+    padding: 54px 0 44px;
+  }
+
+  .rqw-sports-intro {
+    font-size: 0.93rem;
+  }
+
+  .rqw-sports-catalog {
+    padding: 30px 0 60px;
+  }
+
+  .rqw-sports-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  .rqw-sports-card-copy {
+    min-height: 104px;
+    padding: 19px 20px 23px;
+  }
+}
