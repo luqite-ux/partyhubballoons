@@ -5,4 +5,11 @@ import { OrganizationJsonLd } from "@/components/seo/json-ld";
 const sans=Manrope({variable:"--font-sans",subsets:["latin"]});
 const display=Playfair_Display({variable:"--font-display",subsets:["latin"]});
 export const metadata:Metadata={title:{default:"PARTY HUB | Premium Balloons",template:"%s | PARTY HUB"},description:"Premium foil balloons and OEM/ODM production support for global party buyers.",metadataBase:new URL("https://partyhubballoons.com")};
-export default function RootLayout({children}:LayoutProps<"/">){return <html lang="en" className={`${sans.variable} ${display.variable}`}><body><OrganizationJsonLd/>{children}</body></html>}
+export default function RootLayout({children}:LayoutProps<"/">){return <html lang="en" className={`${sans.variable} ${display.variable}`}><body><OrganizationJsonLd/>{children}
+  {process.env.NODE_ENV === 'production' && process.env.NEXT_PUBLIC_TENANT_ID && (
+    <script
+      async
+      src={`https://admin.globle-trade.com/api/public/analytics.js?tenantId=${encodeURIComponent(process.env.NEXT_PUBLIC_TENANT_ID)}`}
+    />
+  )}
+</body></html>}
