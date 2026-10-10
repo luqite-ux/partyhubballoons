@@ -38,6 +38,7 @@ type AdminProxyDependencies = {
   adminUrl: string | undefined;
   tenantId: string | undefined;
   fetchImpl: typeof fetch;
+  pathPrefix?: "/admin" | "/api/admin";
 };
 
 function normalizeAdminOrigin(value: string | undefined): URL | null {
@@ -66,9 +67,9 @@ function isSafePath(path: string[] | undefined): path is string[] {
   );
 }
 
-function customerAdminPath(path: string[] | undefined) {
-  if (!path?.length) return "/admin";
-  return `/admin/${path.map(encodeURIComponent).join("/")}`;
+function customerAdminPath(path: string[] | undefined, prefix: "/admin" | "/api/admin") {
+  if (!path?.length) return prefix;
+  return `${prefix}/${path.map(encodeURIComponent).join("/")}`;
 }
 
 function withTenantCookie(cookieHeader: string | null, tenantId: string) {
@@ -168,7 +169,7 @@ function customerCookie(cookie: string, customerUrl: URL): string | null {
   const secure = !isLocalHttp(customerUrl) || sameSiteNone;
   return [
     cookiePair,
-    "Path=/admin",
+    "Path=/",
     ...attributes,
     ...(secure ? ["Secure"] : []),
   ].join("; ");
@@ -336,9 +337,17 @@ async function copyUpstreamResponse(
     cookies.some((cookie) => cookie.startsWith(`${ADMIN_SESSION_COOKIE}=`))
   ) {
     const secure = isLocalHttp(request.nextUrl) ? "" : "; Secure";
+    // Remove cookies issued by the older /admin-only proxy. The upload API
+    // needs the same session cookie on /api/admin/*.
+    for (const name of [ADMIN_SESSION_COOKIE, TENANT_COOKIE]) {
+      headers.append(
+        "set-cookie",
+        `${name}=; Path=/admin; Max-Age=0; HttpOnly${secure}; SameSite=Lax`,
+      );
+    }
     headers.append(
       "set-cookie",
-      `${TENANT_COOKIE}=${encodeURIComponent(tenantId)}; Path=/admin; Max-Age=604800; HttpOnly${secure}; SameSite=Lax`,
+      `${TENANT_COOKIE}=${encodeURIComponent(tenantId)}; Path=/; Max-Age=604800; HttpOnly${secure}; SameSite=Lax`,
     );
   }
 
@@ -354,6 +363,7 @@ export function createAdminProxyHandler({
   adminUrl,
   tenantId,
   fetchImpl,
+  pathPrefix = "/admin",
 }: AdminProxyDependencies) {
   return async function handleAdminProxy(
     request: NextRequest,
@@ -371,7 +381,7 @@ export function createAdminProxyHandler({
     const { path } = await context.params;
     if (!isSafePath(path)) return new Response("Not found.", { status: 404 });
 
-    const pathname = customerAdminPath(path);
+    const pathname = customerAdminPath(path, pathPrefix);
     if (pathname === LOGIN_PATH && request.method === "GET") {
       return loginPage(request);
     }
