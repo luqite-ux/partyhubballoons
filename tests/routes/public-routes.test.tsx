@@ -24,4 +24,18 @@ describe("independent public pages", () => {
     expect(screen.getByRole("heading", { level: 1, name: products[0].name })).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Request a Quote/i })).toHaveAttribute("href", `/en/contact?product=${products[0].slug}`);
   });
+
+  it("renders saved backend detail fields and omits invented sales claims", () => {
+    render(<ProductDetail locale="en" product={{
+      ...products[0], overview: "<p>Customer supplied detail</p>",
+      model: "GJPQ+MNYJ", specs: { Material: "Foil" },
+      features: ["Five pieces"], applications: ["Birthday parties"],
+      customization: [],
+    }} />);
+    expect(screen.getByText("Customer supplied detail")).toBeInTheDocument();
+    expect(screen.getByText("GJPQ+MNYJ", { exact: false })).toBeInTheDocument();
+    expect(screen.getByText("Foil")).toBeInTheDocument();
+    expect(screen.getByText("Five pieces")).toBeInTheDocument();
+    expect(screen.queryByText(/Reference MOQ/)).not.toBeInTheDocument();
+  });
 });

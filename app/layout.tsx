@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import "./product-detail.css";
 import { OrganizationJsonLd } from "@/components/seo/json-ld";
 const sans=Manrope({variable:"--font-sans",subsets:["latin"]});
 const display=Playfair_Display({variable:"--font-display",subsets:["latin"]});
